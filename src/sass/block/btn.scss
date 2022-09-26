@@ -1,0 +1,17 @@
+.btn{
+  @include reset-button;
+  @include font-roboto-medium;
+  @include font(12px, 14px);
+  padding: 13px 25px;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+
+  &_red{
+    background-color: $color-bg-red;
+  }
+
+  &_blue{
+    background-color: $color-bg-blue;
+  }
+}
