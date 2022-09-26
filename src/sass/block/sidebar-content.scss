@@ -6,7 +6,7 @@
     display: block;
     width: 100px;
     height: 100px;
-    border: 2px solid #fff;
+    border: 2px solid $color-text-white;
     border-radius: 50%;
     box-shadow: 0 7px 20px rgba(0, 0, 0, .25);
     margin: 0 auto;
@@ -21,7 +21,7 @@
     @include font-roboto-regular;
     @include reset-model;
     @include font(18px, 21px);
-    color: #fff;
+    color: $color-text-white;
     margin-bottom: 3px;
   }
 
@@ -36,7 +36,7 @@
 
   &__about{
     @include font(12px, 18px);
-    color: #fff;
+    color: $color-text-white;
     text-align: center;
     padding: 0 20px;
 

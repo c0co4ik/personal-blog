@@ -1,0 +1,24 @@
+.search{
+  @include reset-model;
+  @include font-roboto-regular;
+  @include font(12px, 14px);
+  width: 100%;
+  max-width: 210px;
+  background-color: $color-bg-gray;
+
+  &::placeholder{
+    text-align: center;
+    color: rgba($color-text-white, .4);   
+  }
+
+  &__input{
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    padding: 12px 20px;
+    color: $color-text-white;
+  }
+}
