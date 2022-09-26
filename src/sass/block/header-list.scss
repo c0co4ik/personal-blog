@@ -3,12 +3,17 @@
   display: flex;
 
   &__item{
+    position: relative;
     transition: all .3s;
+    &:hover{
+      background-color: $color-bg-blue;
+
+      > .header-sublist {
+        display: block;
+      }
+    }
   }
 
-  &__item:hover{
-    background-color: $color-bg-blue;
-  }
 
   &__link{
     @include reset-link;
