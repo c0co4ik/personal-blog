@@ -1,0 +1,37 @@
+.post-list{
+  @include reset-list;
+  display: flex;
+
+  &__item{
+     &:not(:last-child):after{
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      margin: 0 15px;
+      position: relative;
+      top: -1px;
+
+      border-radius: 50%;
+      background-color: #C4C4C4;
+    }
+  }
+
+  &__time{
+    @include reset-model;
+    @include font-lato-regular;
+    @include font(12px, 15px);
+    color: $color-text-supergray; 
+  }
+
+  &__category{
+    @include reset-link;
+    @include font-lato-regular;
+    @include font(13px, 15px);
+    color: $color-text-supergray;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

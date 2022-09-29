@@ -1,0 +1,17 @@
+.post{
+  background-color: $color-bg-gray;
+  padding: 25px 27px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .35);
+  border-radius: 5px;
+  margin-bottom: 30px;
+
+  &:last-child{
+    margin-bottom: 80px;
+  }
+
+
+  &__content{
+    margin-bottom: 20px;
+  }
+
+}

@@ -1,0 +1,16 @@
+.post-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  &__read{
+    @include reset-link;
+    @include font-lato-regular;
+    @include font(14px, 17px);
+    color: $color-text-blue;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

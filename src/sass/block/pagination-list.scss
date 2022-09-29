@@ -1,0 +1,33 @@
+.pagination-list{
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+
+  &__item{
+    margin: 0 5px;
+  }
+
+  &__link{
+    @include reset-link;
+    @include font-roboto-regular;
+    @include font(14px, 40px);
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: $color-bg-header;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    color: $color-text-white;
+    transition: background-color .2s linear;
+
+    &:hover{
+      background-color: lighten($color-bg-header, 2%)
+    }
+
+    &.active {
+      background-color: $color-bg-sea;
+      box-shadow: 0 0 10px rgba($color-bg-sea, .15);
+    }
+  }
+}

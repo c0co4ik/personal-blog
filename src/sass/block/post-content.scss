@@ -1,0 +1,20 @@
+.post-content{
+  &__title-link{
+    @include reset-link;
+    @include font-roboto-medium;
+    @include font(18px, 21px);
+    margin-bottom: 15px;
+    color: $color-text-white;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  &__text{
+    @include reset-model;
+    @include font-roboto-regular;
+    @include font(14px, 21px);
+    color: $color-text-gray;
+  }
+}
