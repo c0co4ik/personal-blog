@@ -1,0 +1,25 @@
+.post-action{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  &__link{
+    @include flex-center-v;
+    @include reset-link;
+    @include font-roboto-regular;
+    @include font(12px, 14px);
+    color: $color-text-white;
+    opacity: 0.6;
+    transition: opacity .1s linear;
+
+    &:hover{
+      text-decoration: underline;
+      opacity: 1;
+    }
+  }
+
+  &__share{
+    margin-left: 7px;
+  }
+
+}

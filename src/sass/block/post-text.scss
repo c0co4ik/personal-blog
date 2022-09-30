@@ -1,0 +1,13 @@
+.post-text{
+
+  p{
+    @include reset-model;
+    @include font-roboto-regular;
+    @include font(14px, 21px);
+    color: $color-text-gray;
+  }
+  
+  p + p{
+    margin-top: 20px;
+  }
+}

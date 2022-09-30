@@ -11,10 +11,4 @@
     }
   }
 
-  &__text{
-    @include reset-model;
-    @include font-roboto-regular;
-    @include font(14px, 21px);
-    color: $color-text-gray;
-  }
 }
