@@ -1,0 +1,17 @@
+.post-comments{
+  margin-top: 30px;
+  &__title{
+    @include reset-model;
+    @include font-roboto-medium;
+    @include font(16px, 19px);
+    margin-bottom: 20px;
+    color: $color-text-white;
+  }
+
+  &__btn{
+    @include font-roboto-regular;
+    @include font(12px, 14px);
+    padding: 8px 15px;
+    border-radius: 5px;
+  }
+}

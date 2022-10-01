@@ -6,12 +6,21 @@
   color: #fff;
   text-align: center;
   border-radius: 25px;
+  transition: background-color .2s linear;
 
   &_red{
     background-color: $color-bg-red;
+
+    &:hover{
+      background-color: darken($color-bg-red, $amount: 10)
+    }
   }
 
   &_blue{
     background-color: $color-bg-blue;
+
+    &:hover{
+      background-color: darken($color-bg-blue, $amount: 10)
+    }
   }
 }
