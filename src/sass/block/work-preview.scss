@@ -1,0 +1,10 @@
+.work-preview{
+  width: 310px;
+  flex-grow: 1;
+
+  &__img{
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}

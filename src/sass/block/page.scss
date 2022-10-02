@@ -1,3 +1,11 @@
 .page{
   overflow: hidden;
+
+  &__title{
+    @include reset-model;
+    @include font-roboto-regular;
+    @include font(21px, 21px);
+    margin-bottom: 30px;
+    color: $color-text-white;
+  }
 }

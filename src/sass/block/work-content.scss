@@ -1,0 +1,33 @@
+.work-content{
+  display: flex;
+  flex-direction: column;
+  max-width: 290px;
+  flex-grow: 1;
+  padding: 28px 25px 25px 25px;
+
+  &__title{
+    @include reset-model;
+    @include font-roboto-medium;
+    @include font(24px, 28px);
+    margin-bottom: 30px;
+    color: $color-text-white;
+  }
+
+  &__link{
+    @include reset-link;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  &__descr{
+    @include reset-model;
+    @include font-roboto-light;
+    @include font(16px, 27px);
+    max-width: 240px;
+    margin-bottom: 30px;
+    color: $color-text-gray;
+  }
+
+}

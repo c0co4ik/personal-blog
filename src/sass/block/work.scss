@@ -1,0 +1,13 @@
+.work{
+  overflow: hidden;
+  margin-bottom: 30px;
+  background: $color-bg-gray;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .35);
+  border-radius: 5px;
+  display: flex;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+
+}

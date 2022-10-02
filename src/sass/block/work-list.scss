@@ -1,0 +1,19 @@
+.work-list{
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+
+  &__item{
+    @include reset-model;
+    @include font-roboto-regular;
+    @include font(11px, 13px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: $color-text-white;
+    padding: 4px 9px;
+    background-color: #EA8C1E;
+    border-radius: 3px;
+    text-align: center;
+  }
+}
