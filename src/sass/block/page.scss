@@ -7,5 +7,9 @@
     @include font(21px, 21px);
     margin-bottom: 30px;
     color: $color-text-white;
+
+    &_center{
+      text-align: center;
+    }
   }
 }
