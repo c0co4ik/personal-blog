@@ -1,0 +1,12 @@
+.profile-form{
+  &__group{
+    margin-bottom: 25px;
+  }
+
+  &__btn{
+    @include font-roboto-regular;
+    @include font(12px, 14px);
+    padding: 8px 14px;
+    border-radius: 5px;
+  }
+}
