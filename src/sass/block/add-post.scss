@@ -24,6 +24,7 @@
     color: $color-text-gray;
     resize: none;
     outline: none;
+    overflow: hidden;
 
     &::placeholder{
       color: $color-text-gray;

@@ -2,6 +2,10 @@
   @include reset-list;
   display: flex;
 
+  @include bp(lg){
+    display: none;
+  }
+
   &__item{
     position: relative;
     transition: all .3s;

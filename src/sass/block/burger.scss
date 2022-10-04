@@ -1,0 +1,45 @@
+.burger{
+  @include reset-button;
+  display: none;
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 0;
+  color: transparent;
+
+  @include bp(lg){
+    display: block;
+  }
+
+  
+  span,
+  &::after,
+  &::before{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+  }
+
+  &::after,
+  &::before{
+    content: "";
+  }
+
+  &::after{
+    bottom: 0;
+  }
+
+  &::before{
+    top: 0;
+  }
+
+  span{
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

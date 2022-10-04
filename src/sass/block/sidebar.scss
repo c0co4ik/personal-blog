@@ -8,4 +8,7 @@
   background-color: $color-bg-gray;
   box-shadow: 5px 0 15px rgba(#050505, .1);
 
+  @include bp(lg){
+    display: none;
+  }
 }

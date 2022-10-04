@@ -1,6 +1,6 @@
 // Медиа-выражение
 @mixin media($width) {
-  @media(min-width: $width) {
+  @media(max-width: $width) {
     @content;
   }
 }
