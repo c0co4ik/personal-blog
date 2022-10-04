@@ -16,11 +16,12 @@
   <link rel="manifest" href="manifest.json">
 </head>
 
-<body>
+<body class="no-scroll">
   <div class="page">
     @@include("chunk/header.html")
 
     @@include("chunk/sidebar.html")
+
 
     <main class="main">
       <div class="container">
@@ -28,7 +29,7 @@
       </div>
     </main>
   </div>
-
+  @@include("chunk/share-modal.html")
 </body>
 
 </html>

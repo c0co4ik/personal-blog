@@ -1,0 +1,27 @@
+.modal-form{
+  max-width: 340px;
+
+  &__group{
+    margin-bottom: 25px;
+  }
+
+  &__btn{
+    @include font-roboto-regular;
+    @include font(12px, 14px);
+    padding: 8px 14px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+  &__link{
+    @include reset-link;
+    @include font-roboto-regular;
+    @include font(12px, 16px);
+    color: #B3B3B3;
+    text-decoration: underline;
+
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}

@@ -2,7 +2,6 @@
   @include reset-list;
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
 
   &__item + &__item{
     margin-left: 15px;
