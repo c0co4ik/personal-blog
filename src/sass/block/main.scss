@@ -3,7 +3,14 @@
 
   @include bp(lg){
     padding-left: 0;
+
   }
+
+  @include bp(md){
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+  
 
   .container{
     @include bp(sm){

@@ -2,6 +2,10 @@
   margin-top: auto;
   text-align: right;
 
+  @include bp(lg){
+    text-align: center
+  }
+
     &__btn{
       @include font-roboto-regular;
       @include font(12px, 14px);

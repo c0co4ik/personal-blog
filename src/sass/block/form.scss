@@ -3,6 +3,10 @@
 &__group{
     margin-bottom: 15px;
     position: relative;
+    
+    @include bp(lg){
+      width: 280px;
+    }
   }
 
   &__control{
@@ -48,6 +52,10 @@
     transition: width .2s linear;
   }
   &__footer{
+
+    @include bp(lg){
+      text-align: center;
+    }
 
     &_center{
       text-align: center;

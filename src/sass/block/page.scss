@@ -34,5 +34,11 @@
     &_center{
       text-align: center;
     }
+
+    &_centring{
+      @include bp(lg){
+        text-align: center;
+      }
+    }
   }
 }

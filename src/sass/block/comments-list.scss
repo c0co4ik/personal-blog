@@ -2,6 +2,10 @@
   @include reset-list;
   margin-top: 50px;
 
+  @include bp(sm){
+    margin-top: 25px;
+  }
+
   &__item{
     margin-bottom: 30px;
 

@@ -2,9 +2,10 @@
   @include reset-list;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 
   &__item{
-    width: 50%;
+    width: 100%;
     margin-bottom: 25px;
   }
 

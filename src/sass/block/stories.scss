@@ -4,4 +4,9 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 13px;
   grid-template-rows: 195px;
+
+  @include bp(sm){
+    grid-template-columns: 140px 140px 140px 140px;
+    overflow:auto;
+  }
 }

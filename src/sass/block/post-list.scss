@@ -2,6 +2,10 @@
   @include reset-list;
   display: flex;
 
+  @include bp(sm){
+    margin-bottom: 5px;
+  }
+
   &__item{
      &:not(:last-child):after{
       content: "";
@@ -29,6 +33,10 @@
     @include font-lato-regular;
     @include font(13px, 15px);
     color: $color-text-supergray;
+
+    @include bp(sm){
+      @include font(12px, 14px);
+    }
 
     &:hover{
       text-decoration: underline;

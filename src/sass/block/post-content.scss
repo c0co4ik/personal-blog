@@ -1,4 +1,8 @@
 .post-content{
+  &__title{
+    @include reset-model;
+  }
+
   &__title-link{
     @include reset-link;
     @include font-roboto-medium;
@@ -13,5 +17,11 @@
 
   &_borderbottom{
     border-bottom: 1px solid #1C1C1C;
+  }
+
+  &__text{
+    @include bp(sm){
+      @include reset-model;
+    }
   }
 }

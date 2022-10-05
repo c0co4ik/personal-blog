@@ -5,8 +5,8 @@
   border-radius: 5px;
   margin-bottom: 30px;
 
-  &:last-child{
-    margin-bottom: 80px;
+  @include bp(sm){
+    padding: 13px 15px 18px;
   }
 
 
@@ -18,5 +18,12 @@
     display: block;
     max-width: 100%;
     height: auto;
+    border-radius: 5px 5px 0 0;
+
+    @include bp(sm){
+      padding: 12px 12px;
+      border-radius: 17px 17px 0 0;
+    }
   }
+
 }

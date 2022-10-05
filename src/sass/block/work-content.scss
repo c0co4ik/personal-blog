@@ -1,8 +1,13 @@
 .work-content{
   display: flex;
   flex-direction: column;
-  flex-basis: 290px;
+  max-width: 290px;
   padding: 28px 25px 25px 25px;
+
+  @include bp(lg){
+    margin: 0 auto;
+    max-width: none;
+  }
 
   &__title{
     @include reset-model;
@@ -10,6 +15,10 @@
     @include font(24px, 28px);
     margin-bottom: 30px;
     color: $color-text-white;
+
+    @include bp(sm){
+      margin-bottom: 15px;
+    }
   }
 
   &__link{
@@ -27,6 +36,10 @@
     max-width: 240px;
     margin-bottom: 30px;
     color: $color-text-gray;
+
+    @include bp(lg){
+      max-width: none;
+    }
   }
 
 }

@@ -6,6 +6,10 @@
   border-radius: 5px;
   display: flex;
 
+  @include bp(lg){
+    flex-direction: column;
+  }
+
   &:last-child{
     margin-bottom: 0;
   }
