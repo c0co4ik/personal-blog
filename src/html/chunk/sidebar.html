@@ -1,13 +1,55 @@
 <aside class="sidebar">
-      <div class="sidebar-header">
-        <img src="img/sidebar-header.jpg" alt="Задний фон">
+      <div class="sidebar-header sidebar__header">
+        <img class="sidebar-header__img" src="img/sidebar-header.jpg" alt="Задний фон">
       </div>
-      <div class="sidebar-content">
+      <div class="sidebar-content sidebar__content">
         <img src="img/sidebar-avatar.jpg" alt="Матвей Пономарев" class="sidebar-content__avatar">
         <article class="sidebar-content__profile">
           <h1 class="sidebar-content__name">Матвей Пономарев</h1>
           <p class="sidebar-content__prof">блог front-end разработчика</p>
         </article>
+        <nav class="nav nav_mobile">
+          <ul class="header-list">
+            <li class="header-list__item">
+              <a href="index.html" class="header-list__link">
+                Главная
+              </a>
+            </li>
+            <li class="header-list__item">
+              <a href="#" class="header-list__link header-list__sublist">
+                Статьи
+              </a>
+              <ul class="header-sublist">
+                <li class="header-sublist__item">
+                  <a href="#" class="header-sublist__link">
+                    Создание сайтов
+                  </a>
+                </li>
+                <li class="header-sublist__item">
+                  <a href="#" class="header-sublist__link">
+                    Интернет-маркетинг
+                  </a>
+                </li>
+                <li class="header-sublist__item">
+                  <a href="#" class="header-sublist__link">
+                    Продвижение видео
+                  </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-list__item">
+            <a href="text.html" class="header-list__link">
+              Обо мне
+            </a>
+          </li>
+          <li class="header-list__item">
+            <a href="text.html" class="header-list__link">
+              Реклама
+            </a>
+          </li>
+        </ul>
+        </nav>
+
         <ul class="sidebar-content__social sidebar-social">
           <li class="sidebar-social__item">
             <a href="#" class="sidebar-social__link">
@@ -29,7 +71,7 @@
         <p class="sidebar-content__text">Front-end разработчик. Практик верстки сайтов.Созданием сайтов занимаюсь с 2022 года. Нигде не работал, но стремлюсь к устройству на работу.</p>
         </div>
       </div>
-      <div class="sidebar-footer">
+      <div class="sidebar-footer sidebar__footer">
         <div class="btn-more">
           <a href="works.html" class="btn-more__portfolio btn btn_red">Мои работы</a>
           <button class="btn-more__message btn btn_blue">Написать мне</button>

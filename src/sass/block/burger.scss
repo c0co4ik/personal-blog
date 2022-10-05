@@ -28,6 +28,7 @@
   &::after,
   &::before{
     content: "";
+    transition: transform .2s linear;
   }
 
   &::after{
@@ -41,5 +42,25 @@
   span{
     top: 50%;
     transform: translateY(-50%);
+    transition: opacity .2s linear;
+  }
+
+  .show-sidebar &{
+    span{
+      opacity: 0;
+    }
+
+    &::after,
+    &::before{
+      top: 50%;
+    }
+
+    &::before{
+      transform: rotate(45deg);
+    }
+
+    &::after{
+      transform: rotate(-45deg);
+    }
   }
 }

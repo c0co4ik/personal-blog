@@ -2,10 +2,6 @@
   @include reset-list;
   display: flex;
 
-  @include bp(lg){
-    display: none;
-  }
-
   &__item{
     position: relative;
     transition: all .3s;
@@ -39,5 +35,30 @@
       top: -1px;
       
     }
-  } 
+  }
+
+  @include bp(lg){
+    flex-direction: column;
+    text-align: center;
+
+    &__item:hover{
+      background: none;
+    }
+
+    &__link{
+      @include font(16px, 19px);
+      @include font-roboto-light;
+      text-transform: capitalize;
+    }
+  }
+
+  @include bp(md){
+    text-align: left;
+
+    &__link{
+      padding-left: 0;
+      padding-right: 0;
+      text-transform: capitalize;
+    }
+  }
 }

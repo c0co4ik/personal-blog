@@ -22,8 +22,8 @@
   }
 
   &__name{
-    @include font-roboto-regular;
     @include reset-model;
+    @include font-roboto-regular;
     @include font(18px, 21px);
     color: $color-text-white;
     margin-bottom: 3px;
@@ -58,6 +58,51 @@
       max-width: 260px;
       border-top: 1px solid #1C1C1C;
       margin: 30px auto 0;
+    }
+  }
+
+  @include bp(lg){
+
+    &__profile::after{
+      content: "";
+      display: block;
+      margin-top: 16px;
+      margin-left: -85px;
+      height: 1px;
+      background-color: #1C1C1C;
+    }
+
+    &__social{
+        display: none;
+      }
+
+      &__about{
+        display: none;
+      }
+    }
+
+  @include bp(md){
+    &__avatar{
+      width: 65px;
+      height: 65px;
+      position: absolute;
+      top: 83px;
+    }
+
+    &__profile{
+      max-width: 200px;
+      position: relative;
+      left: 75px;
+      text-align: start;
+      margin-top: 29px;
+    }
+
+    &__name{
+      @include font(15px, 18px);
+    }
+
+    &__prof{
+      @include font(12px, 14px);
     }
   }
 }

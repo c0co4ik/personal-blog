@@ -23,4 +23,29 @@
       background-color: darken($color-bg-blue, 5%);
     }
   }
+
+  @include bp(lg){
+    width: 100%;
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+
+    &__link{
+      @include font-roboto-light;
+      @include font(15px, 32px);
+    }
+
+    &__link:hover{
+      background: none;
+    }
+  }
+
+  @include bp(md){
+    padding-left: 20px;
+
+    &__link{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }

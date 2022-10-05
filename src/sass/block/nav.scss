@@ -1,0 +1,19 @@
+.nav{
+  display: block;
+
+  &_mobile{
+    display: none;
+  }
+
+  @include bp(lg){
+    display: none;
+    
+    &_mobile{
+      display: block;
+      margin-top: 30px; 
+    }
+
+  }
+
+
+}

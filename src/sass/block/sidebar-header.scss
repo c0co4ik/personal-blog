@@ -1,8 +1,17 @@
 .sidebar-header{
-    height: 180px;
+  height: 180px;
 
-    &img{
-      display: block;
-      object-fit: cover;
+  &__img{
+    display: block;
+    object-fit: cover;
+  }
+
+  @include bp(md){
+    height: 100px;
+
+    &__img{
+      height: 100px;
+      width: 100%;
     }
   }
+}
