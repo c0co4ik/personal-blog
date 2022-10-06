@@ -2,11 +2,15 @@
   @include reset-list;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+
+  @include bp(lg){
+    flex-direction: column;
+  }
 
   &__item{
     width: 100%;
     margin-bottom: 25px;
+    max-width: 250px;
   }
 
   &__link{
